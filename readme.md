@@ -1,4 +1,28 @@
-	 / _____)             _              | |    
+
+     ____  ____  ____  ____  _  _  ____  __  __  __  __ 
+    (  _ \( ___)( ___)(_  _)( \( )(_  _)(  )(  )(  \/  )
+     )(_) ))__)  )__)  _)(_  )  (  _)(_  )(__)(  )    ( 
+    (____/(____)(__)  (____)(_)\_)(____)(______)(_/\/\_)
+    
+    Definium Technologies (https://www.definium.net)
+    Launceston, Tasmania, Australia. (+61 3 6334 1048)
+
+Definium LoRa Gateway Fork
+================
+
+The base LoRa packet forwarder implements support for spidev0.0 and a U-Blox 
+GPS, whilst Definium utilises spidev1.0 and a Quectel GPS; this repo tracks 
+the differences.
+
+### def-v5.0.1 ###
+
+* Updated loragw_spi.native.c to use /dev/spidev1.0 by default, as required by
+Definium's 046a multi-channel (8) LoRa gateway.
+
+---
+
+
+	 / _____)             _              | |
 	( (____  _____ ____ _| |_ _____  ____| |__  
 	 \____ \| ___ |    (_   _) ___ |/ ___)  _ \ 
 	 _____) ) ____| | | || |_| ____( (___| | | |
